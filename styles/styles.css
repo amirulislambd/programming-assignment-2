@@ -28,3 +28,15 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
   border: none;
   background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
 }
+.gradient-bg{
+    background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
+    
+}
+
+/* header styles */
+.banner-container{
+    background-image: url('/assets/hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}

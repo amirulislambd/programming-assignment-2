@@ -1,36 +1,65 @@
-<!DOCTYPE html>
-<html lang="en" data-them=[#1A0B2E]>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" data-them="[#1A0B2E]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programming-assignment-2</title>
     <!-- TAILWINDCSS LINK -->
-         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-         <!-- CDNJS LINK -->
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CDNJS LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- CSS LINK -->
-     <link rel="stylesheet" href="/styles/styles.css">
-</head>
-<body>
-    <header class="main-width">
-        <!-- navbar section -->
-        <nav class="flex items-center justify-between mt-4 mb-4">
-            <div class="font-bold text-3xl md:text-4xl lg:text-5xl">
-                <span>Tech</span><span class="gradient-color">Wave</span>
-            </div>
-            <div class="hidden md:block">
-                <ul class="flex gap-8">
-                    <li>About</li>
-                    <li>Episodes</li>
-                    <li>Host</li>
-                </ul>
-            </div>
-            <button class="hidden gradient-btn md:block">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="">
+      <!-- navbar section -->
+      <nav class="main-width flex items-center justify-between mt-4 mb-4">
+        <div class="font-bold text-3xl md:text-4xl lg:text-5xl">
+          <span>Tech</span><span class="gradient-color">Wave</span>
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex gap-8">
+            <li>About</li>
+            <li>Episodes</li>
+            <li>Host</li>
+          </ul>
+        </div>
+        <button class="hidden gradient-btn md:block">
+          Subscribe <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
 
-            <div class="md:hidden w-100%"> <img src="./assets/hamburger-menu.png" alt=""></div>
-        </nav>
+        <div class="md:hidden ">
+          <img w-[100%] src="./assets/hamburger-menu.png" alt="menu" />
+        </div>
+      </nav>
+      <!-- banner section -->
+      <div class="banner-container  ">
+        <div class="main-width flex flex-col  items-center py-11 lg:py-24 lg:px-64 text-center">
+            <div class="gradient-bg px[4px] py-4 md:px-22 md:py-18  rounded-full">
+          <img  class="w-18" src="./assets/microphone.png" alt="" />
+        </div>
+        <div >
+          <h1 class="text-4xl font-bold">TeachWave</h1>
+          <p>
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+          <div>
+            <button>Listen on Spotify</button>
+            <button>Subscribe</button>
+          </div>
+        </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
-</body>
+  </body>
 </html>
