@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* fixed styles */
+body {
+  background-color: #1a0b2e;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.main-width {
+  width: 71%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* sherd styles */
+.gradient-color{
+background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.gradient-btn {
+  border-radius: 100px;
+  padding: 12px 16px;
+  border: none;
+  background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
+}
