@@ -25,6 +25,7 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
 .gradient-btn {
   border-radius: 100px;
   padding: 12px 16px;
+  cursor: pointer;
   border: none;
   background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
 }
