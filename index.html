@@ -42,14 +42,15 @@
         </div>
       </nav>
       <!-- banner section -->
-      <div class="banner-container">
+      <div class="banner-bg-img min-h-[500px] md:min-h-[700px] flex items-center justify-center">
         <div
-          class="main-width flex flex-col items-center py-11 text-center gap-6"
+          class="main-width flex flex-col items-center justify-center py-11 text-center gap-6"
         >
-          <div class="gradient-bg px[4px] py-4 md:px-22 md:py-18 rounded-full">
-            <img class="w-18" src="./assets/microphone.png" alt="" />
+          <div class="relative flex  items-center">
+            <img class="w-[170px] h-[170px] md:w-[200px] md:h-[200px] lg:w-[410px] lg:h-[410px]" src="./assets/hero-circle.png" alt="">
+            <img  class="w-[60px] h-[92px] md:w-[70px] md:h-[120px] lg:w-[170px] lg:h-[270px] absolute left-[50px] md:left-[62px] lg:left-[116px] " src="./assets/microphone.png" alt="" />
           </div>
-          <div class="flex flex-col gap-6 w-full">
+          <div class="flex flex-col gap-6 ">
             <div>
               <h1 class="text-4xl font-bold">TeachWave</h1>
               <p>
@@ -58,14 +59,14 @@
               </p>
             </div>
             <!-- banner buttons -->
-            <div class="flex gap- justify-center">
+            <div class="flex gap-2 justify-center">
               <button
                 class="gradient-bg p-1 rounded-full md:py-3 md:px-4 cursor-pointer"
               >
                 <i class="fa-brands fa-spotify"></i> Listen on Spotify
               </button>
               <button
-                class="text-semibold text-[#00FF88] border p-1 md:py-3 flex items-center md:px-4 rounded-full cursor-pointer"
+                class="font-semibold text-[#00FF88] border p-1 md:py-3 flex items-center md:px-4 rounded-full cursor-pointer"
               >
                 <i class="fa-regular fa-envelope"></i> Subscribe
               </button>
@@ -91,7 +92,7 @@
           </p>
           <p class="md:mt-4">
             Join thousands of young professionals and tech enthusiasts who start
-            their day wit h TechWave.
+            their day with TechWave.
           </p>
         </div>
         <div class="grid grid-cols-2 gap-10 lg:grid-cols-4 text-center">
