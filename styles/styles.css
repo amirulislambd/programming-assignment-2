@@ -52,3 +52,11 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
  font-size: 24px;
  font-weight: 700;
 }
+
+/* footer styles */
+footer{
+  background-image: url('/assets/footer-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
