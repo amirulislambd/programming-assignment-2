@@ -34,20 +34,77 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
     
 }
 
+/* animation btn */
+@keyframes spin {
+  from {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.animation-btn{
+  position: relative;
+  z-index: 1;
+  border: none !important;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: #00FF88 !important;
+  border-radius: 9999px;
+  /* padding: 10px 20px; */
+}
+.animation-btn::before{
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  top: 50%;
+  width: 500%;
+  height: 500%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #f7e93f 0%, 
+    #fb09b4 50%, 
+    #9100f8 100%
+  );
+  transform: translate(-50%, -50%);
+  animation: spin 4s linear infinite;
+}
+.animation-btn::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 2px;
+  /* left: 2px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px; */
+ background: #11071F;
+  border-radius: 9999px;
+}
+
+
 /* header styles */
 .banner-bg-img{
     background-image: url('../assets/hero-bg.png');
-    background-position:center;
+    background-position:center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    
 }
-@media (max-width:576){
-  .banner-bg-img{
-    background-size: contain;
+
+@media (max-width: 768px) {
+  .banner-bg-img {
+    background-size:contain; 
+    background-position: center top; 
+    /* min-height: 100vh;  */
   }
 }
 
@@ -56,6 +113,18 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
 width: 350px;
 max-width: 1200px;
 margin: 0 auto;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+.animation{
+  animation: spin 7s linear infinite;
 }
 
 /* choose techWave styles */
