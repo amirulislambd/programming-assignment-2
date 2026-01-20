@@ -158,10 +158,8 @@ footer{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-@media (max-width: 768px) {
-  footer {
-    background-position: bottom;
-    background-size: 200% auto; 
-  }
+  background-position:center center;
+    width: 100%;
+    position: relative;
+    background-color: #1a0b2e;
 }
