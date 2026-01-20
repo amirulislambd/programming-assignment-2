@@ -33,9 +33,19 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
     background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
     
 }
+/* text-opacity */
+.opacity{
+  opacity: 0.8;
 
+}
 /* animation btn */
-@keyframes spin {
+@-webkit-keyframes buttonSpin{
+  from{-webkit-transform: translate(-50%,50%) rotate(0deg); transform: translate(-50%, -50%) rotate(0deg);}
+  to{-webkit-transform: translate(-50% ,50%) rotate(360deg); transform: translate(-50%, -50%) rotate(300deg);}
+
+}
+
+@keyframes buttonSpin {
   from {
     transform: translate(-50%,-50%) rotate(0deg);
   }
@@ -56,6 +66,8 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
   background: transparent;
   color: #00FF88 !important;
   border-radius: 9999px;
+  -webkit-isolation: isolate;
+  isolation: isolate;
   /* padding: 10px 20px; */
 }
 .animation-btn::before{
@@ -66,28 +78,39 @@ background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
   top: 50%;
   width: 500%;
   height: 500%;
-  background: conic-gradient(
+  background: -webkit-conic-gradient(
     from 0deg at 50% 50%,
-    #f7e93f 0%, 
-    #fb09b4 50%, 
+    #f7e93f 0%,
+    #2d00f8 25%, 
+    #fb09b4 50%,
+    #f7e93f 75%, 
     #9100f8 100%
   );
-  transform: translate(-50%, -50%);
-  animation: spin 4s linear infinite;
+  background: conic-gradient(from 0deg at 50% 50%,#fb09b4, #9100f8 100% );
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50% );
+  -webkit-animation: buttonSpin 4s linear infinite;
+  animation: buttonSpin 2s linear infinite;
 }
 .animation-btn::after{
   content: '';
   position: absolute;
   z-index: -1;
-  inset: 2px;
-  /* left: 2px;
+  /* inset: 2px; */
+  left: 2px;
   top: 2px;
   right: 2px;
-  bottom: 2px; */
+  bottom: 2px;
  background: #11071F;
   border-radius: 9999px;
 }
-
+@keyframes spin{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+.animation{
+  animation: spin 5s linear infinite;
+}
 
 /* header styles */
 .banner-bg-img{
@@ -115,17 +138,8 @@ max-width: 1200px;
 margin: 0 auto;
 }
 
-@keyframes spin {
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform:rotate(360deg);
-  }
-}
-.animation{
-  animation: spin 7s linear infinite;
-}
+
+
 
 /* choose techWave styles */
 .choose-card{
