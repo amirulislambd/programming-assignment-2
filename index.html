@@ -28,18 +28,20 @@
         </div>
         <div class="hidden lg:block">
           <ul class="flex gap-8">
-            <a class="animation-btn py-1 px-3" href=""><li>About</li></a>
-            <a class="animation-btn py-1 px-3"><li>Episodes</li></a>
-            <a class="animation-btn py-1 px-3"><li>Host</li></a>
+            <a class="animation-btn py-1 px-3" href="#about"><li>About</li></a>
+            <a class="animation-btn py-1 px-3" href="#episodes"
+              ><li>Episodes</li></a
+            >
+            <a class="animation-btn py-1 px-3" href="#host"><li>Host</li></a>
           </ul>
         </div>
         <button class="hidden gradient-btn md:block">
           Subscribe <i class="fa-solid fa-arrow-right-long"></i>
         </button>
 
-        <div class="md:hidden ">
-          <div class="animation-btn p-2 ">
-            <img  w-[100%] src="./assets/hamburger-menu.png" alt="menu" />
+        <div class="md:hidden">
+          <div class="animation-btn p-2">
+            <img w-[100%] src="./assets/hamburger-menu.png" alt="menu" />
           </div>
         </div>
       </nav>
@@ -72,7 +74,9 @@
 
           <div class="flex flex-col gap-6 bottom-12">
             <div>
-              <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">TeachWave</h1>
+              <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                TeachWave
+              </h1>
               <p class="opacity text-sm md:text-lg">
                 Your daily dose of tech insights, productivity hacks, and
                 personal growth
@@ -98,7 +102,8 @@
     <main>
       <!-- About teh product section  -->
       <section
-        class="w-[96%] mx-auto md:w-[71%] flex flex-col gap-20 py-10 lg:pb-28 bg-black "
+        id="about"
+        class="w-[96%] mx-auto md:w-[71%] flex flex-col gap-20 py-10 lg:pb-28 bg-black"
       >
         <div class="flex flex-col text-center px-2 md:px-3 gap-2">
           <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
@@ -110,7 +115,9 @@
             insights, explore productivity strategies that actually work, and
             share stories of personal growth from industry leaders.
           </p>
-          <p class="md:mt-4 md:text-justify lg:text-center opacity text-sm md:text-lg">
+          <p
+            class="md:mt-4 md:text-justify lg:text-center opacity text-sm md:text-lg"
+          >
             Join thousands of young professionals and tech enthusiasts who start
             their day with TechWave.
           </p>
@@ -209,8 +216,10 @@
       </section>
 
       <!-- Featured Episodes -->
-      <section class="w-[96%] mx-auto md:w-[71%] my-10 lg:my-28">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 lg:mb-10">
+      <section id="episodes" class="w-[96%] mx-auto md:w-[71%] my-10 lg:my-28">
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 lg:mb-10"
+        >
           Featured Episodes
         </h1>
         <div class="lg:flex gap-7">
@@ -317,8 +326,13 @@
       </section>
 
       <!-- Meet The Host -->
-      <section class="w-[96%] mx-auto md:w-[71%] mt-15 mb-10 lg:my-28">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 lg:mb-10">
+      <section
+        id="host"
+        class="w-[96%] mx-auto md:w-[71%] mt-15 mb-10 lg:my-28"
+      >
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 lg:mb-10"
+        >
           Meet the Host
         </h1>
         <div
@@ -339,16 +353,21 @@
               <div
                 class="animation-btn p-2 lg:p-5 border-2 border-[#533C72] rounded-full"
               >
-                <img
-                  class="w-5 h-5"
-                  src="./assets/linkedin.png"
-                  alt="linkedin"
-                />
+                <a
+                  href="https://www.linkedin.com/in/md-amirul-islam-b60a283a0/"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/linkedin.png"
+                    alt="linkedin"
+                /></a>
               </div>
               <div
                 class="animation-btn p-2 lg:p-5 border-2 border-[#533C72] rounded-full"
               >
-                <img class="w-5 h-5" src="./assets/x.png" alt="linkedin" />
+                <a href="https://x.com/amirislambd313"
+                  ><img class="w-5 h-5" src="./assets/x.png" alt="linkedin"
+                /></a>
               </div>
               <div
                 class="animation-btn p-2 lg:p-5 border-2 border-[#533C72] rounded-full"
@@ -373,7 +392,7 @@
         </div>
       </section>
     </main>
-    <footer >
+    <footer>
       <div
         class="w-[96%] mx-auto md:w-[71%] flex flex-col items-center gap-3 md:gap-8 py-5 md:py-28"
       >
@@ -395,7 +414,9 @@
             <p class="opacity text-sm md:text-lg">Youtube</p>
           </div>
           <div class="flex items-center gap-2">
-            <img src="./assets/twitter.png" alt="twitter" />
+            <a href="https://x.com/amirislambd313"
+              ><img src="./assets/twitter.png" alt="twitter"
+            /></a>
             <p class="opacity text-sm md:text-lg">Twitter</p>
           </div>
         </div>
